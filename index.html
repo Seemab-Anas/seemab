@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.Anas/Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo"><span>My</span>Portfolio_</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h3>Hey_</h3>
+            <h2>I am <span id="text"></span></h2>
+            <p>
+                As an aspiring and multi-talented individual studying at NUCES FAST University, I am passionate about bringing digital ideas to life and leaving a positive impact through my skills as a frontend web developer, C++ coder, and graphic designer.</p>
+            <button>Hire Me</button>
+            <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon> Let's Chat</button>
+        </div>
+
+        <img src="brush.png" class="colors">
+        <img src="My_Pic.png" class="men">
+
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/seemab.anas.7?mibextid=ZbWKwL" target=”_blank><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/seemabanas" target=”_blank><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://instagram.com/seemab_anas?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target=”_blank><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://github.com/Seemab-Anas" target=”_blank><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+        <div class="daynight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        let typingText = new Typed("#text",{
+            strings : ["Seemab Anas","Web Developer","Programmer","Graphic Designer"],
+            loop:true,
+            typeSpeed:100,
+            backSpeed:50,
+            backDelay:1000,
+        })
+
+
+        let banner=document.querySelector('.banner');
+        let daynight=document.querySelector('.daynight');
+
+        daynight.onclick=function(){
+            banner.classList.toggle('night');
+        }
+    </script>
+</body>
+</html>
